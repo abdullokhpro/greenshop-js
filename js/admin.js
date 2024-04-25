@@ -1,4 +1,5 @@
-let isLogin = null;
+const logOut = document.querySelector(".log-out");
+let isLogin = localStorage.getItem("x - auth - token");
 
 function checkUser() {
   if (!checkUser) {
@@ -7,3 +8,8 @@ function checkUser() {
 }
 
 checkUser();
+
+logOut.addEventListener("click", () => {
+  localStorage.clear();
+  window.open("../index.html");
+});
