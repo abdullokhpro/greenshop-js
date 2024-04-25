@@ -11,5 +11,5 @@ checkUser();
 
 logOut.addEventListener("click", () => {
   localStorage.clear();
-  window.open("../index.html");
+  window.open("../index.html", "_self");
 });
